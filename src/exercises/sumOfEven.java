@@ -2,41 +2,27 @@ package exercises;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class sumOfEven {
-    public static void main(String[] args) {
-        ArrayList<String> students = new ArrayList<>();
-        ArrayList<Double> grades = new ArrayList<>();
-        Scanner input = new Scanner(System.in);
-        String newStudent;
+    public static int main(String[] args) {
+        //ArrayList<String> students = new ArrayList<>();
+        //ArrayList<Double> grades = new ArrayList<>();
+        //Scanner input = new Scanner(System.in);
+        //String newStudent;
 
-        System.out.println("Enter your students (or ENTER to finish):");
-
-        // Get student names
-        do {
-            newStudent = input.nextLine();
-
-            if (!newStudent.equals("")) {
-                students.add(newStudent);
+        //System.out.println("Enter number: (or ENTER to finish):");
+        int total = 0;
+        int[] number = {10, 21, 30, 40, 50, 61, 70, 80, 90, 100};
+        ArrayList<Integer> values = new ArrayList<>();
+        for (int num : number) {
+            values.add(num);
+            if (num % 2 == 0) {
+                total += num;
             }
-
-        } while(!newStudent.equals(""));
-
-        // Get student grades
-        for (String student : students) {
-            System.out.print("Grade for " + student + ": ");
-            Double grade = input.nextDouble();
-            grades.add(grade);
         }
+        System.out.println(values);
+        System.out.println(new sumOfEven());
+        return total;
 
-        // Print class roster
-        System.out.println("\nClass roster:");
-        double sum = 0.0;
 
-        for (int i = 0; i < students.size(); i++) {
-            System.out.println(students.get(i) + " (" + grades.get(i) + ")");
-            sum += grades.get(i);
-        }
 
-        double avg = sum / students.size();
-        System.out.println("Average grade: " + avg);
     }
 }
