@@ -1,12 +1,13 @@
-package org.launchcode.java.studioresturauntmenu;
+package org.launchcode.java.studiorestaurantmenu;
 
-public class menuItems {
+public class MenuItems {
+
     private double price;
     private String description;
     private String category;
     private boolean isNew;
 
-    public  menuItems(double p, String d, String c, boolean iN){
+    public MenuItems(double p, String d, String c, boolean iN){
         this.price = p;
         this.description = d;
         this.category = c;
@@ -41,7 +42,7 @@ public class menuItems {
         return category;
     }
 
-    public boolean getANew(){
-        return true;
+    public boolean isNew() {
+        return isNew;
     }
 }

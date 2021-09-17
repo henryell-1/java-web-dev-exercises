@@ -1,4 +1,4 @@
-package org.launchcode.java.studioresturauntmenu;
+package org.launchcode.java.studiorestaurantmenu;
 
 
 import java.util.ArrayList;
@@ -6,9 +6,9 @@ import java.util.Date;
 
 public class Menu{
     private Date lastUpdated;
-    private ArrayList<menuItems> items;
+    private ArrayList<MenuItems> items;
 
-    public Menu(Date d, ArrayList<menuItems> i){
+    public Menu(Date d, ArrayList<MenuItems> i){
         this.lastUpdated = d;
         this.items = i;
     }
@@ -17,7 +17,7 @@ public class Menu{
         this.lastUpdated = lastUpdated;
     }
 
-    public void setItems(ArrayList<menuItems> items){
+    public void setItems(ArrayList<MenuItems> items){
         this.items = items;
     }
 
@@ -25,7 +25,7 @@ public class Menu{
         return lastUpdated;
     }
 
-    public ArrayList<menuItems> getItems(){
+    public ArrayList<MenuItems> getItems(){
         return items;
     }
 
