@@ -2,9 +2,9 @@ package org.launchcode.java.studiorestaurantmenu;
 
 public class MenuItems {
 
-    private double price;
-    private String description;
-    private String category;
+    public double price;
+    public String description;
+    public String category;
     private boolean isNew;
 
     public MenuItems(double p, String d, String c, boolean iN){

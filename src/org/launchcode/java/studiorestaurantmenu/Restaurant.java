@@ -1,18 +1,14 @@
 package org.launchcode.java.studiorestaurantmenu;
 
-
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-/*
 public class Restaurant {
-
     public static void main(String[] args){
-        MenuItem newItem1 = new MenuItem( price: 5.55, description: "Chilly Pasta", category: "Dinner", isNew: true);
-        MenuItem newItem2 = new MenuItem( price: 8.99, description: "T-bone Steak", category: "Dinner", isNew: false);
-        MenuItem newItem3 = new MenuItem( price: 6.59, description: "Ice cream pie", category: "Dessert", isNew: true);
+        MenuItems newItem1 = new MenuItems(5.55,  "Chilly Pasta",  "Dinner",  true);
+        MenuItems newItem2 = new MenuItems( 8.99,  "T-bone Steak",  "Dinner",  false);
+        MenuItems newItem3 = new MenuItems( 6.59,  "Ice cream pie",  "Dessert",  true);
 
 
         Date today = Calendar.getInstance().getTime();
@@ -26,7 +22,7 @@ public class Restaurant {
 
         System.out.println("1. Print the entire menu to the screen.");
         System.out.println("Code: ourMenu.printMenu();\n");
-        ourMenu.printMenu();
+        //ourMenu.printMenu();
 
         System.out.println("\n");
         System.out.println("2. Print individual menu item to screen.");
@@ -38,7 +34,7 @@ public class Restaurant {
         System.out.println("ourMenu.removeItem(newItem2);");
         System.out.println("Code: ourMenu.printMenu();\n");
         ourMenu.printMenu(newItem2);
-        ourMenu.printMenu();
+        //ourMenu.printMenu();
 
         System.out.print("\n");
         System.out.println("Printing price and category");
@@ -49,8 +45,7 @@ public class Restaurant {
         System.out.printf("%s \n", newItem2.price);
 
 
+    }
 }
-}
-
 
 

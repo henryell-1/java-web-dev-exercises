@@ -1,10 +1,8 @@
 package org.launchcode.java.studiorestaurantmenu;
 
 
-import jdk.internal.jimage.ImageStrings;
 import jdk.internal.jimage.ImageStringsReader;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -35,7 +33,7 @@ public class Menu{
         return items;
     }
 
-    public ArrayList<MenuItems> addItem(MenuItem item){
+    public ArrayList<MenuItems> addItem(MenuItems item){
         this.item.add(String.valueOf(item));
         return this.items;
     }
@@ -60,7 +58,7 @@ public class Menu{
         System.out.println(item.getDescription());
     }
 
-    public void printMenu(MenuItem newItem2){
+    public void printMenu(MenuItems newItem2){
         for (int i = 0; i < items.size(); i++){
             System.out.println(items.get(i).getDescription());
         }
